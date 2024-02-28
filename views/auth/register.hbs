@@ -1,0 +1,35 @@
+<form  method="post" onsubmit="return checkPass();" action="/auth/register">
+   <div class="container">
+       <h1>Register</h1>
+
+         <label for="username"><b>Username</b></label>
+         <input type="text"placeholder="Enter Username" name="username" id="username" required>
+
+          {{#if InputErrors.username}}
+          <div class="error">
+            {{ InputErrors.username}}
+          </div>
+           {{/if }}
+  
+         <label for="psw"><b>Password</b></label>
+         <input type="password"placeholder="Enter password" name="password" id="password" required>
+        
+        <span id="retype_error" class="error"></span>
+
+         <label for="psw-repeat"><b>Repeat Password</b></label>
+         <input type="password"placeholder="repeat password" name="psw-repeat" id="retype" required>
+         <hr>
+         <div>
+         <label>Role</label>
+         <input type="radio" name="role" id="" value="admin">Admin
+         <input type="radio" name="role" id="" value="user">Employee
+         <button type="submit" class="registerbtn">Register</button>
+         </div>
+
+         
+   </div>
+         <div class="container signin">
+            <p>Aready have an account? <a href="#"> Sign in </a>.</p>
+         </div>
+  
+</form>

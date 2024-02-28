@@ -1,0 +1,26 @@
+
+<h1>Delivery receipt page</h1>
+<table class="table table-primary">
+    <tr>
+        <th>Sender Name</th>
+        <th>Address</th>
+        <th>phonenumberSD</th>
+        <th>PostalCode</th>
+        <th>Category</th>
+        <th>Menu</th>
+    </tr>
+    {{#each deliveryList }}
+    <tr>
+        <td>{{ senderName }}</td>
+        <td>{{ addressSender }}</td>
+        <td>{{ phonenumberSD}}</td>
+        <td>{{ postalCode }}</td>
+        <td>{{ category.name }}</td>
+        <td>
+          <a href="/delivery/add/">Add</a>
+          <a href="/delivery/edit/{{_id}}">Edit</a>
+          <a href="/delivery/delete/{{_id}}">Delete</a>
+        </td>
+    </tr>
+    {{/each}}
+</table>

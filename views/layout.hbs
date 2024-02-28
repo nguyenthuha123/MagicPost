@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+    <script src="/javascripts/validation.js"></script>
+  </head>
+  <body>
+
+      <div class="container">
+    <nav class="blue bold upper">
+      <ul>
+        <li>
+          <a href="/">HOME</a>
+        </li>
+        <li>
+          <a href="/delivery">Delivery</a>
+        </li>
+        <li>
+          <a href="/category">CATEGORY</a>
+        </li>
+        <li>
+          <a href="/auth/logout">LOGOUT ({{ username }})</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="row">
+      {{{body}}}
+    </div>
+  </body>
+</html>

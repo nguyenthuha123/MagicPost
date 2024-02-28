@@ -1,0 +1,17 @@
+<h1>Instruction page</h1>
+<table border="1">
+    <tr>
+        <th>name</th>
+        <th>menu</th>
+    </tr>
+     {{#each instrucList }}
+    <tr>
+        <td>{{ name }}</td>   
+        <td>
+            <a href="/instruction/add/">Add</a>
+            <a href="/instruction/edit/{{_id}}">Edit</a>
+            <a href="/instruction/delete/{{_id}}">delete</a> 
+        </td>
+    </tr>
+    {{/each}} 
+</table>

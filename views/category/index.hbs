@@ -1,0 +1,17 @@
+<h1>Category deliver</h1>
+<table border="1">
+    <tr>
+        <th>name</th>
+        <th>menu</th>
+    </tr>
+     {{#each categoryList }}
+    <tr>
+        <td>{{ name }}</td>   
+        <td>
+            <a href="/category/add/">Add</a>
+            <a href="/category/edit/{{_id}}">Edit</a>
+            <a href="/category/delete/{{_id}}">delete</a> 
+        </td>
+    </tr>
+    {{/each}} 
+</table>
